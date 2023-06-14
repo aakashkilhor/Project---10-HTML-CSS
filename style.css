@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800;900&display=swap');
+
+*{
+    font-family: 'poppins';
+}
+body{
+    background-image: url("assets/retro-living-room-interior-design\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+nav li {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+}
+.items{
+    display: flex;
+    gap: 8vw;
+    padding: 10px;
+    border-bottom: 3px solid white;
+}
+.content{
+    margin-top: 10vh;
+    margin-left: 4vw;
+}
+.design{
+    display: flex;
+}
+.tagline{
+    font-size: 65px;
+    color: white;
+    font-weight: 600;
+}
+button{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 25px 80px;
+    border-radius: 40px;
+}
+.card{
+    position: relative;
+    background-color: rgba(200, 200, 200, .2);
+    padding: 20px 20px;
+    margin-top: 30px;
+    margin-left: 160px;
+    width: 300px;
+    height: auto;
+}
+.icon{
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 40px;
+    z-index: 1;
+}
+.card div{
+    color: white;
+    font-size: 20px;
+}
+.card1{
+    position: relative;
+    margin-top: 160px;
+    background-color: rgba(200, 200, 200, .2);
+    padding: 20px 20px;
+    width: 235px;
+    height: auto;
+}
+.card1 div{
+    color: white;
+    font-size: 20px;
+}
+.line{
+    position: absolute;
+    border: 1px solid white;
+    height: 100px;
+    width: 0px;
+    margin-left: 255px;
+    margin-top: 20px;
+}
+.line1{
+    position: absolute;
+    border: 1px solid white;
+    height: 0px;
+    width: 100px;
+    margin-left: 255px;
+    margin-top: -80px;
+}
+.line::after { 
+    content: '';
+    width: 0; 
+    height: 0;
+    margin-top: 90px;
+    margin-left: -10px;
+    border-radius: 10px; 
+    border: 10px solid white;
+    position: absolute;
+}
+.line1::before{
+    content: '';
+    width: 0; 
+    height: 0;
+    margin-top: -10px;
+    margin-left: 90px;
+    border-radius: 10px; 
+    border: 10px solid white;
+    position: absolute;
+}
+@media (max-width:968px) {
+    .design{
+        flex-direction: column;
+    }
+}
